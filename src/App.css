@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 23, 25); /* เปลี่ยนสีพื้นหลังของทั้งหน้าเว็บ */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100%; 
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2rem;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+button {
+  background: linear-gradient(135deg,  #3a1204, #312b2f); /* เพิ่มการไล่สี */
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #312b2f, #3a1204); /* ไล่สี */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px); 
+  border: 2px solid #fff; 
+}
+
+button:active {
+  transform: translateY(0); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
